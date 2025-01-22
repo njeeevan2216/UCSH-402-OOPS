@@ -36,11 +36,13 @@ class complex {
             return(imag);
         }
 
-        void addWith(complex a) {
-            real= real + a.getReal();
-            imag= imag + a.getImag();
-        }
+        void addWith(complex a);
 };
+
+void complex::addWith(complex a) {
+    real= real + a.getReal();
+    imag= imag + a.getImag();
+}
 
 complex sum(complex a, complex b) {
     complex t;
