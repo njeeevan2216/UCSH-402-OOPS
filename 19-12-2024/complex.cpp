@@ -53,7 +53,7 @@ complex sum(complex a, complex b) {
 
 int main() {
     int ch;
-    complex i1, i2;
+    complex i1, i2;/*
     while(true) {
         cout << "Press,\n1 to Set.\n2 to Display.\n3 to Add BOTH A and B.\n4 to Exit.\n\nEnter your choice: ";
         cin >> ch ;
@@ -97,6 +97,7 @@ int main() {
         }
         cout << endl << endl;
     }
-    cout << "Bye..." ;
+    cout << "Bye..." ;*/
+    cout << sizeof(i1) << endl;
     return(0);
 }
