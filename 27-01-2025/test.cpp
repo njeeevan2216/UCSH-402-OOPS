@@ -69,7 +69,7 @@ public:
 
     // Method to display fund status
     void displayFundsStatus() {
-        cout << "------------FUND STATUS------------";
+        cout << "------------FUND STATUS------------" << endl;
         cout << "Company: " << companyName << endl;
         cout << "Initial Capital: Rs " << initialCapital << " Lakhs" << endl;
         cout << "Funds Allocation:" << endl;
