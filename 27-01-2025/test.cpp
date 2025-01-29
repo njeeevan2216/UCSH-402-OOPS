@@ -73,9 +73,9 @@ public:
         cout << "Company: " << companyName << endl;
         cout << "Initial Capital: Rs " << initialCapital << " Lakhs" << endl;
         cout << "Funds Allocation:" << endl;
-        cout << "  " << branchA.getBranchName() << ": Rs " << branchA.getAllocatedFunds() << " Lakhs" << endl;
-        cout << "  " << branchB.getBranchName() << ": Rs " << branchB.getAllocatedFunds() << " Lakhs" << endl;
-        cout << "  " << branchC.getBranchName() << ": Rs " << branchC.getAllocatedFunds() << " Lakhs" << endl;
+        cout << "   " << branchA.getBranchName() << ": Rs " << branchA.getAllocatedFunds() << " Lakhs" << endl;
+        cout << "   " << branchB.getBranchName() << ": Rs " << branchB.getAllocatedFunds() << " Lakhs" << endl;
+        cout << "   " << branchC.getBranchName() << ": Rs " << branchC.getAllocatedFunds() << " Lakhs" << endl;
         cout << "Remaining Capital: Rs " << remainingCapital << " Lakhs" << endl;
     }
 };
