@@ -71,10 +71,10 @@ int main() {
     team1.inputTeamMarks();
 
     if (team1.isSelected()) {
-        cout << "The Team is Selected :: Hurray!!" << endl;
+        cout << "The Team is eligible to be Selected :: Hurray!!" << endl;
     }
     else {
-        cout << "The Team is not Selected :: Sorry!!" << endl;
+        cout << "The Team is NOT eligible to be Selected :: Sorry!!" << endl;
     }
     return 0;
 }
