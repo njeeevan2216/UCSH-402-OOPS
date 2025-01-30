@@ -58,6 +58,24 @@ class Team {
         p2.inputMarks();
     }
 
+    void printTeamMarks() {
+        cout << "==================================================" << endl;
+        cout << "Mark Summary:" << endl;
+        cout << "==================================================" << endl;
+        cout << "Marks for Programmer 1:" << endl;
+        cout << "   Graduation: " << p1.getGraduationMarks() << endl;
+        cout << "   Post-Graduation: " << p1.getPostGraduationMarks() << endl;
+        cout << "   Interview: " << p1.getInterviewMarks() << endl;
+        cout << "Marks for Programmer 2:" << endl;
+        cout << "   Graduation: " << p2.getGraduationMarks() << endl;
+        cout << "   Post-Graduation: " << p2.getPostGraduationMarks() << endl;
+        cout << "   Interview: " << p2.getInterviewMarks() << endl;
+        cout << "Marks for the Team:" << endl;
+        cout << "   Total Graduation: " << p1.getGraduationMarks() + p2.getGraduationMarks() << endl;
+        cout << "   Total Post-Graduation: " << p1.getPostGraduationMarks() + p2.getPostGraduationMarks() << endl;
+        cout << "   Total Interview: " << p1.getInterviewMarks() + p2.getInterviewMarks() << endl;
+    }
+
     bool isSelected() {
         int totalG = p1.getGraduationMarks() + p2.getGraduationMarks();
         int totalP = p1.getPostGraduationMarks() + p2.getPostGraduationMarks();
@@ -69,12 +87,16 @@ class Team {
 int main() {
     Team team1;
     team1.inputTeamMarks();
+    team1.printTeamMarks();
 
+    cout << "==================================================" << endl;
     if (team1.isSelected()) {
         cout << "The Team is eligible to be Selected :: Hurray!!" << endl;
     }
     else {
         cout << "The Team is NOT eligible to be Selected :: Sorry!!" << endl;
     }
+    cout << "==================================================" << endl;
+
     return 0;
 }
