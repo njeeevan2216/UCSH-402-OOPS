@@ -8,14 +8,14 @@ using namespace std;
 class Vehicle  
 { 
   protected: 
-    Vehicle() 
+    void start() 
     { 
       cout << "This is a Vehicle" << endl; 
     } 
 }; 
 class fourWheeler: protected Vehicle 
 {  public: 
-    fourWheeler() 
+    fourWheeler()
     { 
       cout<<"Objects with 4 wheels are vehicles"<<endl; 
     } 
